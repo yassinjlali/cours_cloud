@@ -31,6 +31,7 @@ public class TpseanceOneApplication {
 		System.out.println(json);
 
 		String s = "y" ;
+		System.out.println("test CI/CD pipeline");
 		return  s;
 
 	}
