@@ -25,7 +25,7 @@ jobs :
         run : mvn clean install
 
       - name : Build the Docker Image
-        run : docker build . --file Dockerfile --tag yassinjlali/cours-cloud:${GITHUB_SHA::8}
+        run : docker build . --file Dockerfile --tag yassinjlali/v1:${GITHUB_SHA::8}
 
       - name : Push Docker Image to Docker Hub
-        run : docker push ${{secrets.Docker_User_Name}}/cours-cloud:${GITHUB_SHA::8}
+        run : docker push ${{secrets.Docker_User_Name}}/v1:${GITHUB_SHA::8}
