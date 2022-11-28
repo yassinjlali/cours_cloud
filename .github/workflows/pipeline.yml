@@ -25,7 +25,7 @@ jobs :
         run : mvn clean install
 
       - name : Build the Docker Image
-        run : docker build . --file Dockerfile --tag yassinejlali/cours-cloud:v1
+        run : docker build . --file Dockerfile --tag yassinejlali/tpone:v1.0.0
 
       - name : Push Docker Image to Docker Hub
-        run : docker push ${{secrets.Docker_User_Name}}/cours-cloud:v1
+        run : docker push ${{secrets.Docker_User_Name}}/tpone:v1.0.0
