@@ -16,7 +16,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 @SpringBootApplication
 public class TpseanceOneApplication {
 	static String test(){
-		String token = "10110a70-2d3c-433b-9c18-44bd1427ed69";
+		String token = "$secrets.API_KEY";
 		HttpHeaders headers = new HttpHeaders();
 		headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
 		headers.set("X-CMC_PRO_API_KEY","Bearer"+ token);
